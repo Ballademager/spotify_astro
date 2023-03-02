@@ -1,0 +1,81 @@
+---
+---
+
+<div class="sidebar_menu">
+  <a href="#"
+    ><img
+      src="logo.svg"
+      alt="Spotify logo"
+    /></a
+  >
+  <ul>
+    <li>
+      <a
+        class="flexa"
+        href=""
+        ><img
+          src="home-filled.svg"
+          alt="hjem icon"
+        /><span>Hjem</span></a
+      >
+    </li>
+    <li>
+      <a
+        class="flexa"
+        href=""
+        ><img
+          src="search-icon.svg"
+          alt="søge icon"
+        /><span>Søg</span></a
+      >
+    </li>
+    <li>
+      <a
+        class="flexa"
+        href=""
+        ><img
+          src="library-icon.svg"
+          alt="bib icon"
+        /><span>Dit bibliotek</span></a
+      >
+    </li>
+  </ul>
+</div>
+
+<style>
+  .sidebar_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexa {
+    display: flex;
+    justify-content: space-between;
+  }
+  div a:first-child {
+    color: white;
+    margin: 0 0 18px;
+    padding: 0 24px;
+  }
+  li a {
+    padding: 0 16px;
+  }
+  a img {
+    filter: invert(100%);
+    /* filter: brightness(1000%); */
+    /* filter: hue-rotate(180deg); */
+  }
+  ul li:nth-child(2, 3) {
+    filter: brightness(80%);
+    /* color: #b3b3b3; */
+  }
+  ul li:nth-child(2, 3) img {
+    /* filter: brightness(180%); */
+    filter: invert(100%);
+  }
+  svg {
+    filter: invert(100%);
+  }
+  a {
+    color: aqua;
+  }
+</style>
