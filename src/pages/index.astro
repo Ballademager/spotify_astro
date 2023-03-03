@@ -1,40 +1,25 @@
 ---
-// import "../css/style.css";
+import "../css/style.css";
 import Sidebar from "../components/Sidebar.astro";
-import Vertical from "../components/Vertical.astro";
-import Horizontal from "../components/Horizontal.astro";
+import Card from "../components/Card.astro";
+import Topbar from "../components/Topbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width"
-    />
-    <meta
-      name="generator"
-      content={Astro.generator}
-    />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
     <title>XX-Spotify</title>
   </head>
   <body>
+    <Sidebar />
+    <Topbar />
     <main>
-      <div class="sidebar">
-        <Sidebar />
-      </div>
-      <div class="topbar"></div>
-      <div class="music_area">ta</div>
+      <Card />
     </main>
-    <footer class="music_player">footer med musikafspiller</footer>
+    <Footer />
   </body>
 </html>

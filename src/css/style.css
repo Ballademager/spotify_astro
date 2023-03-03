@@ -48,27 +48,42 @@ a {
 }
 body {
   background-color: #121212;
-}
-
-main {
   display: grid;
   grid-template-columns: 241px 1fr;
   grid-template-rows: auto 1fr auto;
-  position: relative;
-  /* grid-template-areas:
-    "top-bar top-bar"
-    "nav-bar main-view"
-    "now-playing-bar now-playing-bar"; */
-  /* height: 100%; */
-  /* min-height: 100%; */
-  /* width: 100%; */
+  grid-template-areas:
+    "nav topbar"
+    "nav main"
+    "foot foot";
+  height: 100%;
 }
+
+.sidebar {
+  grid-area: nav;
+}
+.topbar {
+  grid-area: topbar;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: foot;
+}
+
+/* main {
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+} */
 .sidebar {
   padding-top: 1.5rem;
 }
-footer {
-  margin-top: 5rem;
+.topbar {
+  background-color: #1a2f45;
 }
+
 /* gradient ikke i brug */
 /* .top_div {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0, #121212 100%), #1a2f45;
